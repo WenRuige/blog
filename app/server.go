@@ -1,12 +1,14 @@
 package app
 
 import (
+	"blog/app/controller"
 	"net/http"
 	"log"
 )
 
-func push() {
-	http.HandleFunc("/", path)
+func Push(path string, method string) {
+
+	http.HandleFunc("/", controller.Test2)
 	err := http.ListenAndServe(":9090", nil) //设置监听的端口
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
