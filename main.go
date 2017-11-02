@@ -1,6 +1,7 @@
 package main
 
 import (
+	"blog/app/util"
 	"blog/app/route"
 )
 
@@ -9,6 +10,7 @@ func init() {
 }
 
 func main() {
-	result := route.Test();
-	println(result)
+	util.Killprocess()
+
+	route.Test();
 }

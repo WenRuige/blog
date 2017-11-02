@@ -8,8 +8,7 @@ package route
 
 func init() {
 
-	RegisterController("/", "Main")
 }
-func Test() int {
-	return 1
+func Test() {
+	RegisterController("/", "Main")
 }
