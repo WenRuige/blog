@@ -5,6 +5,6 @@ import (
 	"net/http"
 )
 
-func Test2(w http.ResponseWriter, r *http.Request) {
+func Index(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("hello world")
 }
