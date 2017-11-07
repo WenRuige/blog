@@ -11,6 +11,5 @@ func init() {
 
 func main() {
 	util.Killprocess()
-
 	route.Test();
 }

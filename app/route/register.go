@@ -2,17 +2,14 @@ package route
 
 import (
 	"blog/app"
-	"fmt"
-
 )
 
+var routerConfig map[string]string
 /*
 	路由分发
 */
 func RegisterController(path string, controller string) {
 
-
-	fmt.Println(path,controller)
-	app.Push(path,controller)
+	app.Push(path, controller)
 
 }

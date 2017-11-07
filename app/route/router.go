@@ -11,4 +11,5 @@ func init() {
 }
 func Test() {
 	RegisterController("/", "Main")
+
 }
